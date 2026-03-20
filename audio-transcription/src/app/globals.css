@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+}
+
+body {
+  color: rgb(15 23 42);
+  background: white;
+  min-height: 100vh;
+}
