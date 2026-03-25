@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <main class="container">
+        <!-- Main Glass Panel -->
+        <div class="glass-panel main-panel">
+            <header class="greeting-section">
+                <h1 id="greeting">Good Morning</h1>
+                <div class="time-display" id="clock">00:00</div>
+                <div class="date-display" id="date">Monday, January 1</div>
+            </header>
+
+            <section class="focus-section">
+                <p class="focus-prompt">What's your primary focus for today?</p>
+                <input type="text" id="focus-input" class="modern-input" placeholder="Type here and press Enter..." autocomplete="off">
+                <div id="focus-display" class="hidden">
+                    <span class="focus-label">TODAY</span>
+                    <h2 id="focus-text"></h2>
+                    <button id="clear-focus" class="icon-button" aria-label="Clear Focus">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Quick Links / Widgets Panel -->
+        <div class="widgets-container">
+            <div class="glass-panel widget">
+                <h3>Quick Links</h3>
+                <div class="links-grid">
+                    <a href="https://github.com" class="quick-link">
+                        <div class="link-icon">G</div>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://youtube.com" class="quick-link">
+                        <div class="link-icon">Y</div>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://reddit.com" class="quick-link">
+                        <div class="link-icon">R</div>
+                        <span>Reddit</span>
+                    </a>
+                    <a href="https://mail.google.com" class="quick-link">
+                        <div class="link-icon">M</div>
+                        <span>Gmail</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="glass-panel widget quote-widget">
+                <p id="daily-quote" class="quote-text">"The secret of getting ahead is getting started."</p>
+                <span class="quote-author">- Mark Twain</span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
